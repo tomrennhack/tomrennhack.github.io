@@ -1,2 +1,2 @@
-# tomrennhack.github.io
-github repo landing page
+# updated-portfolio
+Tom Rennhack's Portfolio Page

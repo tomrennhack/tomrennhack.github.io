@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Tom Rennhack-Portfolio</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="about-me.html">
+            <!-- name -->
+            <h3 id="header-name">Tom Rennhack</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- homepage link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Welcome Page</a>
+                </li>
+                <!-- about me link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">About Me</a>
+                </li>
+                <!-- portfolio link -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- resume pdf link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/Resume_072417.pdf" target="_blank">Resume</a>
+                </li>
+                <!-- github link -->
+                <li class="nav-item">
+                    <a href="https://github.com/tomrennhack" target="_blank" id="my-links">
+                        <img src="assets/images/icon-github.png" id="my-links-icons" alt="Github Profile">
+                    </a>
+                </li>
+                <!-- linkedin link -->
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/thomas-rennhack-8058a18/" target="_blank" id="my-links">
+                        <img src="assets/images/icon-linkedin.png" id="my-links-icons" alt="LinkedIn Profile">
+                    </a>
+                </li>
+                <!-- email link -->
+                <li class="nav-item">
+                    <a href="mailto:tomrennhack@gmail.com" target="_blank" id="my-links">
+                        <img src="assets/images/icon-email.png" id="my-links-icons" alt="Email">
+                    </a>
+                </li>
+                <!-- phone link -->
+                <li class="nav-item">
+                    <a href="tel: 732-740-1423">
+                        <img src="assets/images/icon-phone.png" id="my-links-icons" id="my-links" alt="Phone">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- section containing the part below the heading -->
+    <section class="main">
+
+        <!-- section containing the portfolio images and names -->
+        <div class="focus-area">
+
+                <h3 id="page-intro" style="text-align: center;">Let's get into the projects</h3>
+
+            <!-- organize the portfolio items, overlap the names of each on the image -->
+            <div class="row portfolio-item">
+                <div class="col">
+                    <h4>launchpad</h4>
+                    <hr>
+                    <p>Created for anyone moving to a new country: instantly get the info you need to feel safe and comfortable in your new home, and explore the culture further by seeing what news, videos and music are popular in your new region.</p>
+                    <hr>
+                    <a href="https://tomrennhack.github.io/Project-1-LaunchPad/" target="_blank">
+                        Link to deployed app.
+                    </a><br />
+                    <a href="https://github.com/tomrennhack/Project-1-LaunchPad" target="_blank">
+                        Click here to view the code.
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="assets/images/launchpad-screen.png" alt="launchpad-screen" class="portfolio-pic">
+                </div>
+            </div>
+            <div class="row portfolio-item">
+                <div class="col">
+                    <h4>Giftastic</h4>
+                    <hr>
+                    <p>Quickly generate Giphy gifs of your favorie sports and super-cars. Keep adding cars that you like and you can generate the gifs by clicking the button that is added to the top of the page. Think of some cool cars and see what the internet has in store.</p>
+                    <hr>
+                    <a href="https://tomrennhack.github.io/GifTastic/" target="_blank">
+                        Link to deployed app.
+                    </a><br />
+                    <a href="https://github.com/tomrennhack/GifTastic" target="_blank">
+                        Click here to view the code
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="assets/images/giftastic-screen.png" alt="giftastic-screen" class="portfolio-pic">
+                </div>
+            </div>
+            <div class="row portfolio-item" id="bottom-item">
+                <div class="col">
+                    <h4>Psychic Game</h4>
+                    <hr>
+                    <p>Basic game where you guess what number the computer is thinking of, if you get it right you win, if you get it wrong you lose, and the game keeps track of your score. This was an early project, done in the first weeks of my journey as a developr, so please forgive any design and functionality mishaps.</p>
+                    <hr>
+                    <a href="https://tomrennhack.github.io/Psychic-Game/" target="_blank">
+                        Link to deployed app.
+                    </a><br />
+                    <a href="https://github.com/tomrennhack/Psychic-Game" target="_blank">
+                        Click here to view the code
+                    </a>
+                </div>
+                <div class="col">
+                    <img src="assets/images/psychic-screen.png" alt="psychic-screen" class="portfolio-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- enter a footer here -->
+    <footer>
+        Tom Rennhack, Columbia Full Stack Flex Coding Boot Camp, 2019
+    </footer>
+</body>
+
+</html>
