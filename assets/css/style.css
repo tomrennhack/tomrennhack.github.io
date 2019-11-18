@@ -120,6 +120,8 @@
         #my-links-icons { margin: 5px 0; }
          
         .active { border-radius: 0; background-color: #343a40; text-decoration: underline; }
+
+        .about-me-pics { width: 50%; } 
     }
 
 
@@ -130,6 +132,9 @@
             width: 400px; 
             margin-top: 20px;
         }
+
+        .about-me-pics { width: 100%; } 
+
 
     }
 
