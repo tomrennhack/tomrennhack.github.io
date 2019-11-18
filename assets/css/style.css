@@ -2,6 +2,8 @@
     homepage
     ===============================================================  */
    
+    body { font-family: 'Roboto', sans-serif; }
+
     #profile-pic {
         object-fit: cover;
         width: 300px;
@@ -11,28 +13,15 @@
         margin-top: 30px;
     }
     
-    #welcome-message {
-        font-size: 25px;
-        background-color: rgb(255,255,255,.6);
-        margin-top: 30px;
-        font-family: 'Roboto', sans-serif;
-    }
+    #profile-pic:hover { border: solid 2px orangered; }
 
-    #my-name {
-        font-size: 35px;
-        padding: 0;
-    }
+    #my-name { font-size: 35px; margin-top: 30px }
 
-    #welcome-page-links {
-        margin-right: auto;
-        margin-left: auto;
-        color: rgb(100,100,100);
-    }
+    #my-title { font-size: 22px;  margin-top: -15px; }
 
-    #welcome-page-links:hover {
-        text-decoration: none;
-        color: rgb(100,100,100);
-    }
+    #welcome-page-links { margin-right: auto; margin-left: auto; color: rgb(100,100,100); }
+
+    #welcome-page-links:hover { text-decoration: none; color: orangered; }
 
 /*  ===============================================================
     style the navbar with page title and links 
@@ -44,37 +33,21 @@
         background-color: white;
     }
     
-    #header-name {
-        color: orangered;
-    }
+    #header-name { color: orangered; margin-top: 1px; margin-bottom: 3px; }
 
-    #my-links-icons {
-        width: 25px;
-        height: 25px;
-        margin-left: 10px;
-    }    
+    #my-links-icons { width: 25px; height: 25px; margin-left: 10px; margin-top: 7px;}    
+
+    .active { background-color: rgb(255,69,0,.5); border-radius: 20px; }
 
 /*  ===============================================================
     body styles
     ===============================================================  */
 
-    body {
-        padding-top: 65px;
-    }
+    body { padding-top: 65px; }
     
-    .main {
-        overflow: auto;
-    }
+    .main { overflow: auto; font-family: 'Roboto', sans-serif; }
 
-    #page-title {
-        color: #984b43;
-    }
-
-    #bottom-item {
-        margin-bottom: 60px;
-    }
-
-    /* style the footer */
+    #bottom-item { margin-bottom: 60px; }
 
     footer {
         position: fixed;
@@ -89,43 +62,11 @@
     }
 
 /*  ===============================================================
-    style the about me page 
-    ===============================================================  */
-
-    #page-intro {
-        margin-bottom: 20px;
-    }
-
-    #page-titles {
-        color: #984b43;
-        /* background-color: #984b43; */
-        padding: 10px;
-        margin-top: 15px;
-        border-radius: 5px;
-        border-right: solid 2px #984b43;
-        border-bottom: solid 2px #984b43;
-        border-top: dotted 1px #233237;
-        border-left: dotted 1px #233237;
-        text-align: center;
-    }
-
-    #about-me-pics {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border: solid 2px #a9a9a9;
-    }
-
-    #about-me-text {
-        font-size: .95em;
-    }
-
-/*  ===============================================================
     style the portfolio page 
     ===============================================================  */
 
     #item-dark {
-        background-color: rgb(240,240,240);
+        background-color: rgb(230,230,230);
         padding: 40px 0;
     }
 
@@ -144,10 +85,21 @@
         /* border: dotted 1px #233237; */
     }
     
-    #bottom-item {
-        margin: 40px 0;
-    }
+    #bottom-item { margin: 10px 0; }
 
+/*  ===============================================================
+    style the about me page 
+    ===============================================================  */
+
+    .about-me-main { margin: 0 5%; }
+    
+    .about-me-pics { 
+        width: 33.3%; 
+        object-fit: cover; 
+        object-position: 0 0;
+        margin: 0;
+        padding: 0; 
+    }
 
 /* ===============================================================
    MEDIA SCREENS 
