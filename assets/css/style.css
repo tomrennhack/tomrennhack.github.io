@@ -1,68 +1,69 @@
 /*  ===============================================================
     homepage
     ===============================================================  */
-
-    #welcome-body {
-        background-image: url(../../assets/images/homepage-image.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+   
+    #profile-pic {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        border: solid 2px rgb(230,230,230);  
+        margin-top: 30px;
     }
     
     #welcome-message {
-        color: #233237;
+        font-size: 25px;
+        background-color: rgb(255,255,255,.6);
+        margin-top: 30px;
+        font-family: 'Roboto', sans-serif;
     }
 
     #my-name {
-        color: #984b43;
+        font-size: 35px;
+        padding: 0;
     }
 
-    #entry-point {
-        background-color: #eac67a;
-        border: solid 1px #18121e;
-        border-radius: 5px;
-        font-size: 1.2em;
+    #welcome-page-links {
+        margin-right: auto;
+        margin-left: auto;
+        color: rgb(100,100,100);
+    }
+
+    #welcome-page-links:hover {
+        text-decoration: none;
+        color: rgb(100,100,100);
     }
 
 /*  ===============================================================
     style the navbar with page title and links 
     ===============================================================  */
 
+    .navbar {
+        font-family: 'Roboto', sans-serif;
+        border-bottom: solid 1px rgb(100,100,100);
+        background-color: white;
+    }
+    
     #header-name {
-        color: #984b43;
+        color: orangered;
     }
 
     #my-links-icons {
         width: 25px;
         height: 25px;
         margin-left: 10px;
-    }
-
-    .navbar {
-        background: #ffffff;
-    }
-    
+    }    
 
 /*  ===============================================================
     body styles
     ===============================================================  */
 
     body {
-        padding-top: 70px;
+        padding-top: 65px;
     }
     
     .main {
-        /* width: 100%;
-        height: 100%; */
         overflow: auto;
-        background-color: #eac67a;
-    }
-
-    .focus-area {
-        width: 760px;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #eac67a;
     }
 
     #page-title {
@@ -70,7 +71,21 @@
     }
 
     #bottom-item {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
+    }
+
+    /* style the footer */
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background-color: rgb(40,40,40);
+        color: white;
+        text-align: center;
+        font-size: .7em;
     }
 
 /*  ===============================================================
@@ -96,6 +111,7 @@
 
     #about-me-pics {
         width: 100%;
+        height: 250px;
         object-fit: cover;
         border: solid 2px #a9a9a9;
     }
@@ -108,52 +124,35 @@
     style the portfolio page 
     ===============================================================  */
 
-    .portfolio-item {
-        margin-top: 30px;
-        /* background-color: #ffffff; */
-        padding: 10px;
-        border-radius: 5px;
-        border-right: solid 2px #984b43;
-        border-bottom: solid 2px #984b43;
-        border-top: dotted 1px #233237;
-        border-left: dotted 1px #233237;        
+    /* .portfolio-item {
+        padding: 30px 50px; 
+
+    } */
+
+    #item-dark {
+        background-color: rgb(240,240,240);
+        padding: 30px 0;
     }
 
-    .portfolio-item-last {
-        margin-top: 30px;
-        margin-bottom: 80px;
-        width: 300px;
-        /* background-color: #ffffff; */
-        padding: 10px;
-        border-radius: 5px;
-        border-right: solid 2px #984b43;
-        border-bottom: solid 2px #984b43;
-        border-top: dotted 1px #233237;
-        border-left: dotted 1px #233237;        
+    #item-light {
+        background-color: white;
+        padding: 30px 0;
     }
 
     .portfolio-pic {
-        width: 450px;
+        width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 0 0;
+        border: solid 2px rgb(210,210,210);
         /* border-radius: 5px; */
-        border: dotted 1px #233237;
+        /* border: dotted 1px #233237; */
     }
     
-    /* style the footer */
-
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: #233237;
-        color: #ffffff;
-        text-align: center;
-        font-size: .7em;
+    #bottom-item {
+        margin: 40px;
     }
+
 
 /* ===============================================================
    MEDIA SCREENS 
@@ -180,17 +179,15 @@
             margin: auto;
         }
 
+        #welcome-body {
+            background-size: 300%;
+        }
+
     }
 
     /* set for screens 640px wide or smaller */
     @media screen and (max-width: 640px) {
 
-        #welcome-body {
-            background-image: none;
-            background-color: #a9a9a9;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
         .focus-area {
             width: 420px;
         }
