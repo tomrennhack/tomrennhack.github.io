@@ -30,22 +30,21 @@
     .navbar {
         font-family: 'Roboto', sans-serif;
         border-bottom: solid 1px rgb(100,100,100);
-        background-color: white;
     }
     
     #header-name { color: orangered; margin-top: 1px; margin-bottom: 3px; }
 
     #my-links-icons { width: 25px; height: 25px; margin-left: 10px; margin-top: 7px;}    
 
-    .active { background-color: rgb(255,69,0,.5); border-radius: 20px; }
+    .active { background-color: rgb(255,69,0); border-radius: 20px; }
 
 /*  ===============================================================
     body styles
     ===============================================================  */
 
-    body { padding-top: 65px; }
+    /* body { padding-top: 65px; } */
     
-    .main { overflow: auto; font-family: 'Roboto', sans-serif; }
+    .main { overflow: auto; font-family: 'Roboto', sans-serif; padding-top: 60px;}
 
     #bottom-item { margin-bottom: 60px; }
 
@@ -105,7 +104,7 @@
    MEDIA SCREENS 
    =============================================================== */
     
-    /* 900 to 640 */
+    /* 900 to 767 */
     @media screen and (max-width: 900px) {
 
         .portfolio-pic { 
@@ -114,6 +113,15 @@
         }
 
     }
+
+    /* 767 to 640 */
+    @media screen and (max-width: 767px) {
+        
+        #my-links-icons { margin: 5px 0; }
+         
+        .active { border-radius: 0; background-color: #343a40; text-decoration: underline; }
+    }
+
 
     /* 640 to 480 */
     @media screen and (max-width: 640px) {
